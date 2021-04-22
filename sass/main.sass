@@ -1,0 +1,727 @@
+@import "libs"
+@import "vars"
+
+nav 
+    padding-top: 20px
+    padding-bottom: 10px
+    font-size: 15px 
+    margin: auto 15%
+    display: flex 
+    a 
+        color: #a6a6a6
+        padding: 5px  
+        &:hover
+            background: #ffbb42
+            color: #fff
+            text-decoration: none
+            border-radius: 3px
+    ul 
+        margin-left: auto
+        margin-right: 0
+        padding-top: 10px
+        width: 800px
+        display: flex      
+        li 
+            display: inline-block
+            margin: 0 5px
+            padding: 0 0 
+            text-align: center
+    img
+        width: 30px
+        height: 30px
+              
+@media screen and(min-width: 992px) and (max-width: 1199px)
+    nav
+        margin: auto 5%
+@media screen and(min-width: 768px) and (max-width: 991px)
+    nav
+        margin: auto 1%
+        img
+            margin-left: 5%
+        ul
+            margin-right: auto
+            font-size: 13px
+@media screen and(max-width: 767px)
+    nav
+        height: 220px
+        flex-direction: column
+        align-items: center
+        ul
+            flex-direction: column
+            margin-left: 0
+            padding-left: 0
+            width: 200px
+
+header  
+    div
+        padding-top: 5%
+        background: #709dca
+        color: #fff
+        text-align: center
+        height: 550px
+    form
+        p 
+            display: inline-block
+            margin-left: 5px
+            input
+                height: 38px
+                width: 220px
+                text-align: center
+                font-size: 12px
+            input:focus::-webkit-input-placeholder
+                color:transparent !important
+            input:focus:-moz-placeholder  
+                color:transparent !important
+            input:focus::-moz-placeholder 
+                color:transparent !important
+            input:focus:-ms-input-placeholder
+                color:transparent !important
+        .button
+            font-size: 15px
+            color: #fff
+            background: #ffbb42
+            border: #ffbb42
+            border-radius: 5px
+            &:hover
+                background: #ffc660
+        i.fa 
+            width: 26px
+            height: 26px
+            line-height: 26px
+            text-align: center
+            margin-right: -30px
+            position: relative
+            z-index: 1
+            color: #a7a79f
+
+
+
+.laptop
+    height: 10px
+    .back
+        position: relative
+        z-index: 1
+        bottom: 250px
+        display: block
+        margin: 0 auto
+        height: auto
+        max-width: 100%  
+    .front
+        position: relative
+        z-index: 2
+        display: block
+        margin: 0 auto
+        bottom:  580px
+        height: 280px
+        width: 450px
+    div
+        position: relative
+        z-index: 1
+        bottom:  500px
+        display: flex
+        justify-content: center
+        label
+            padding: 0 5px
+
+@media screen and(max-width: 767px)
+    header
+        div
+            height: auto
+    .laptop
+        display: none
+
+
+
+.services
+    color: #394b50
+    margin: auto 10%
+    padding-bottom: 100px 
+    h2
+        text-align: center
+        margin-top: 200px
+        margin-bottom: 0
+    h3
+        height: 56px
+    p
+        
+        font-family: OpenSans
+    h2, h3
+        font-family: Lato
+        font-weight: bold
+    div.col-lg-1 
+        text-align: center
+                    
+    i.fa
+        color: #709dca
+        font-size: 45px 
+        padding: 5px 0
+    i.fa-clock-o
+        color: #ffc155
+    div
+        padding-bottom: 50px
+    div p
+        text-align: left
+    .col-12
+        p
+            text-align: center
+            
+@media screen and (max-width: 991px)
+    .services
+        .col-12
+            padding-bottom: 30px
+        div
+            padding: 5px  
+            h3
+                height: auto
+                text-align: center
+@media screen and (max-width: 767px)
+    .services
+        .col-12
+            h2
+                margin-top: 40px
+
+
+
+
+.about_us
+    margin: 0
+    height: 500px
+    background: #ffc155
+    color: #fff
+    h2, h3
+        font-family: Lato
+        font-weight: bold
+    .img
+        padding: 0
+        background-image: url("/img/Layer 27.png")
+        background-size: cover
+        background-position: right
+        height: 100%
+    .text
+        padding-left: 5%
+        padding-right: 15%       
+    p
+        font-family: OpenSans
+    input
+        font-size: 15px
+        color: #fff
+        background: #ffbb42
+        border-color: #a4a29d
+        border-style: solid
+        border-width: 1px
+        height: 38px
+        width: 100px
+        text-align: center
+        font-size: 12px   
+        &:hover
+            background: #ffc660 
+
+@media screen and (max-width: 767px)
+    .about_us
+        position: relative
+        height: 700px
+        .img
+            position: absolute
+            top: 0
+            background-position: top
+            height: 50%
+        .text
+            position: absolute
+            bottom: 10px
+@media screen and (max-width: 480px)
+    .about_us
+        height: 400px
+        .img
+            display: none
+@media screen and (max-width: 375px)
+    .about_us
+        height: 470px
+        
+    
+
+
+.prices
+    background: #e7edf3
+    color: #394b50
+    margin: 0
+    font-family: Lato
+    font-weight: light
+    padding-bottom: 10%
+    h2, h3
+        font-family: Lato
+        font-weight: bold
+    h2
+        text-align: center
+        margin-top: 50px
+        margin-bottom: 0     
+    p
+        text-align: center
+        font-family: OpenSans        
+    .col-md-3
+        text-align: center
+        max-width: 300px
+        font-size: 12px
+        color: #818b95
+        h3
+                font-size: 20px
+        p:nth-child(2) 
+            i
+                font-size: 25px
+            span
+                font-size: 50px
+        
+        &:nth-child(2)
+            background: #fff
+            height: 400px
+            margin-top: 30px
+            padding-top: 50px
+            p:nth-child(3), p:nth-child(4), p:nth-child(5)
+                padding-top: 10px
+                border-top: 1px solid #b5bbc1
+                color: #b5bbc1 
+            span
+                color: #ffbb42
+        &:nth-child(3)
+            background: #709dca
+            color: #fff
+            height: 450px
+            padding-top: 80px
+            p:nth-child(3), p:nth-child(4), p:nth-child(5)
+                padding-top: 10px 
+                border-top: 1px solid #8eb8e2 
+                color: #b2d3f4
+        &:nth-child(4)
+            background: #fff
+            height: 400px
+            margin-top: 30px
+            padding-top: 50px
+            p:nth-child(3), p:nth-child(4), p:nth-child(5)
+                padding-top: 10px
+                border-top: 1px solid #b5bbc1
+                color: #b5bbc1  
+            span
+                color: #ffbb42
+    input
+        font-size: 15px
+        color: #fff
+        background: #ffbb42
+        border-color: #a4a29d
+        border-style: solid
+        border-width: 1px
+        height: 38px
+        width: 100px
+        text-align: center
+        font-size: 12px      
+        &:hover
+            background: #ffc660
+       
+@media screen and(max-width: 767px)
+    .prices
+        .col-md-3
+            max-width: 390px
+            &:nth-child(3)
+                height: 400px
+                padding-top: 50px
+                margin-top: 30px
+
+
+
+
+.how
+    margin: 0 auto
+    max-width: 900px
+    h2, h3
+        font-family: Lato
+        font-weight: bold
+        text-align: center
+        margin-top: 50px
+        margin-bottom: 0
+    .col-12
+        margin-bottom: 50px
+    .col-sm-3
+        position: relative
+        div
+            padding-top: 20px
+            text-align: center
+            i 
+                font-size: 50px
+    .arrow1
+        width: 0
+        height: 0
+        margin: 10px auto
+        border: 10px solid
+        border: 10px solid transparent
+        border-top: 0
+        border-left: 0
+        border-bottom-color: #709dca
+        padding: 0 !important
+        position: absolute
+        left: 150px
+        top: 3px
+    .arrow2
+        width: 0
+        height: 0
+        margin: 10px auto
+        border: 10px solid
+        border: 10px solid transparent
+        border-bottom: 0
+        border-left: 0
+        border-right-color: #709dca
+        padding: 0 !important
+        position: absolute
+        left: 290px
+        top: 5px
+    .arrow3
+        width: 0
+        height: 0
+        margin: 10px auto
+        border: 10px solid
+        border: 10px solid transparent
+        border-top: 0
+        border-right: 0
+        border-left-color: #709dca
+        padding: 0 !important
+        position: absolute
+        left: 150px
+        top: 45px
+    .arrow4
+        width: 0
+        height: 0
+        margin: 10px auto
+        border: 10px solid
+        border: 10px solid transparent
+        border-bottom: 0
+        border-right: 0
+        border-top-color: #709dca
+        padding: 0 !important
+        position: absolute
+        left: 290px
+        top: 45px
+    .arrow5
+        width: 0
+        height: 0
+        margin: 10px auto
+        border: 10px solid
+        border: 10px solid transparent
+        border-top: 0
+        border-left: 0
+        border-bottom-color: #709dca
+        padding: 0 !important
+        position: absolute
+        left: 150px
+        top: 3px
+    .arrow6
+        width: 0
+        height: 0
+        margin: 10px auto
+        border: 10px solid
+        border: 10px solid transparent
+        border-bottom: 0
+        border-left: 0
+        border-right-color: #709dca
+        padding: 0 !important
+        position: absolute
+        left: 290px
+        top: 5px  
+    .arrow-line1
+        left: 150px
+        top: -10px
+        height: 100px
+        width: 150px
+        position: absolute
+        border-top: 2px dotted #709dca
+        border-radius: 120px/70px
+    .arrow-line2
+        left: 150px
+        top: -10px
+        height: 100px
+        width: 150px
+        position: absolute
+        border-bottom: 2px dotted #709dca
+        border-radius: 120px/70px
+    .arrow-line3
+        left: 150px
+        top: -10px
+        height: 100px
+        width: 150px
+        position: absolute
+        border-top: 2px dotted #709dca
+        border-radius: 120px/70px
+    p
+        text-align: center
+        font-family: OpenSans
+    .fa
+        color: #709dca
+    input
+        font-size: 15px
+        color: #fff
+        background: #ffbb42
+        border-color: #a4a29d
+        border-style: solid
+        border-width: 1px
+        height: 38px
+        text-align: center
+        font-size: 12px
+        margin-top: 10%
+         
+        &:hover
+            background: #ffc660
+
+@media screen and (max-width: 991px)
+    .arrow1, .arrow2, .arrow3, .arrow4, .arrow5, .arrow6, .arrow-line1, .arrow-line2, .arrow-line3 
+        display: none
+
+    
+
+
+
+.clients
+    margin-top: 5%
+    margin-left: 0
+    margin-right: 0
+    padding-bottom: 5%
+    background: #ffc155
+    color: #fff
+    h2, h3
+        font-family: Lato
+        font-weight: bold
+        text-align: center
+        margin-top: 50px
+        margin-bottom: 0
+    p
+        text-align: center
+    
+        
+    .col-xl-4
+        background: #fff
+        color: #000
+        display: flex
+        margin-bottom: 1%
+        margin-left: 1%
+        margin-right: 1%
+        .text
+                display: flex
+        
+        i
+            margin-top: 5%
+            margin-left: 3%
+            font-size: 10px
+        .fa-flip-horizontal
+            margin-top: 0
+            margin-left: 10%    
+        p
+            margin-top: 5%
+            margin-left: 1%
+            text-align: left
+            span
+                color: #f6772c
+        .container
+            max-width: 200px
+            min-width: 135px
+            
+            .wrap
+                position: relative
+                padding-top: 56.25% 
+                width: 100%
+                margin-top: 5%
+                img 
+                    position: absolute
+                    left: 0
+                    top: 0
+                    width: 100%
+                    height: auto
+@media screen and(max-width: 575px)
+    .clients
+        .col-xl-4
+            display: block
+            .container
+                width: 30%
+                height: 100px
+                .wrap
+                    margin-top: 10%
+@media screen and(max-width: 480px)
+    .clients
+        .col-xl-4
+            margin-left: 0
+            margin-right: 0
+                
+            
+
+  
+
+
+
+
+          
+.newsletter
+    text-align: center
+    form
+        p 
+            display: inline-block
+            margin-left: 5px
+            input
+                height: 38px
+                width: 220px
+                text-align: center
+                font-size: 12px
+                border-style: solid
+            input:focus::-webkit-input-placeholder
+                color:transparent !important
+            input:focus:-moz-placeholder  
+                color:transparent !important
+            input:focus::-moz-placeholder 
+                color:transparent !important
+            input:focus:-ms-input-placeholder
+                color:transparent !important
+        .button
+            font-size: 15px
+            color: #fff
+            background: #ffbb42
+            border: #ffbb42
+            border-radius: 5px
+            &:hover
+                background: #ffc660
+        i.fa 
+            width: 26px
+            height: 26px
+            line-height: 26px
+            text-align: center
+            margin-right: -30px
+            position: relative
+            z-index: 1
+            color: #a7a79f
+    h2, h3
+        font-family: Lato
+        font-weight: bold
+        text-align: center
+        margin-top: 50px
+        margin-bottom: 0
+    
+    p
+        text-align: center
+        
+    input[type="email"]
+        width: 320px
+    .map       
+        margin: 5% 15%
+        position: relative    
+        .address
+            position: absolute 
+            margin: 0
+            top: 30%
+            left: 50%
+            right: -50%
+            transform: translate(-50%, -50%)
+            padding-top: 2% 
+            width: 15em
+            height: 15em
+            border-radius: 50%
+            background-color: #394b50 
+            color: #9ea9ac
+            @media screen and (max-width: 1440px) 
+                width: 14em
+                height: 14em
+            ::after
+                position: absolute
+                content: ''
+                left: 47%
+                top: 99%
+                border: 8px solid transparent       
+                border-top: 18px solid  #394b50     
+            h4
+                color: #fff
+            span
+                color: #ffbb42           
+        .img
+            position: absolute 
+            margin: 0
+            top: 60%
+            left: 50%
+            right: -50%
+            transform: translate(-50%, -50%)
+            padding-top: 2%          
+            max-width: 30px
+        .img2       
+            max-width: 1080px
+            height: auto
+            width: 100%
+
+@media screen and (max-width: 1199px)
+    .newsletter
+        .map
+            .address
+                font-size: 13px
+@media screen and (max-width: 991px)
+    .newsletter
+        .map
+            margin: 1% 5%
+@media screen and (max-width: 767px)
+    .newsletter
+        .map
+            .address
+                position: relative
+                transform: translate(-50%, 0%)
+                
+                ::after
+                    display: none
+            img
+                display: none
+            
+                
+    
+
+footer
+    border-top: 1px solid #a6a6a6
+    text-align: center
+    .footer
+        margin: auto 
+        
+        a 
+            color: #000
+            padding: 5px
+            font-size: 12px
+            font-weight: bold
+            &:hover
+                background: #ffbb42
+                color: #fff
+                text-decoration: none
+                border-radius: 3px
+        .row 
+            padding-top: 10px
+            padding-right: 0
+            padding-left: 0
+            margin-right: 0 
+            margin-left: 0 
+        
+            li 
+                display: inline-block
+                margin: 0 5px
+                padding: 0 0 
+                text-align: center
+    .fa-twitter
+        color: #ffc155
+        padding-right: 10px
+    .fa-facebook
+        color: #709dca
+        padding-right: 10px
+    .fa-google-plus
+        color: #709dca
+        padding-right: 10px
+    .fa-linkedin
+        color: #709dca         
+    .rights
+        height: 30px
+        line-height: 30px
+        background: #709dca
+        color: #fff
+        font-size: 10px
+        
+            
+            
+    
+        
+                
+@import "media"
+
+
+
